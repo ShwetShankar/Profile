@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Experience | UI/UX Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        :root {
+            --meta-blue: #1877F2;
+            --meta-dark: #1C1E21;
+            --meta-light: #F0F2F5;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, var(--meta-blue), #42B72A);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .vanta-bg {
+            min-height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .meta-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .meta-btn {
+            transition: all 0.3s cubic-bezier(.08,.52,.52,1);
+        }
+        .meta-btn:hover {
+            transform: scale(1.05);
+        }
+        .meta-nav {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <div id="vanta-bg" class="vanta-bg"></div>
+    
+    <header class="relative z-10 sticky top-0 meta-nav">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold gradient-text">Meta Experience</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-white hover:text-var(--meta-blue) transition meta-btn">Home</a>
+                    <a href="#" class="text-white hover:text-var(--meta-blue) transition meta-btn">Projects</a>
+                    <a href="#" class="text-white hover:text-var(--meta-blue) transition meta-btn">Skills</a>
+                    <a href="#" class="text-white hover:text-var(--meta-blue) transition meta-btn">Contact</a>
+                </div>
+                <button class="md:hidden">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="relative z-10">
+        <section class="container mx-auto px-6 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQEdsKgFfd1Bwg/profile-displayphoto-scale_200_200/B56ZegeqnyHoAc-/0/1750744084657?e=2147483647&v=beta&t=fweoy3HE-3iJcwQbUI9_TbtVT9JvWAkz_hwpycK2e-g" alt="Profile" class="rounded-full w-64 h-64 object-cover mx-auto shadow-xl border-4 border-white hover:border-var(--meta-blue) transition-all duration-300">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">Hello, I'm <span class="gradient-text">Shwet</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-gray-200">Senior Techno-Functional Consultant</h2>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Microsoft Dynamics 365 Sr. Technical Consultant | MB-800 Certified | 22+ ERP Projects | Expert in Business Central & NAV | Global Experience Across 4 Regions
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="px-6 py-3 bg-gradient-to-r from-var(--meta-blue) to-#42B72A text-white rounded-full font-medium hover:shadow-lg transition meta-btn">View Projects</a>
+                        <a href="#" class="px-6 py-3 border border-gray-300 text-white rounded-full font-medium hover:bg-gray-800 transition meta-btn">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">My <span class="gradient-text">Expertise</span></h2>
+                    <p class="text-gray-300 max-w-2xl mx-auto">Building the future of social experiences through innovative design and engineering</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="meta-card p-8 hover:shadow-lg transition-all duration-300" data-aos="zoom-in">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i data-feather="layout" class="text-blue-500 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Role-Tailored Solutions</h3>
+                        <p class="text-gray-600">Creating Role-Tailored Industry Specific Solution to tackle Day to day hurdles in operations.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                            <i data-feather="code" class="text-purple-500 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">End-To-End Development and Cloud Deployment</h3>
+                        <p class="text-gray-600">Building responsive, performant solutions with clean, maintainable code deployed in Cloud.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                            <i data-feather="smartphone" class="text-green-500 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Mobile-First Design</h3>
+                        <p class="text-gray-600">Prioritizing mobile experiences with progressive enhancement for all devices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Meta <span class="gradient-text">Projects</span></h2>
+                    <p class="text-gray-300 max-w-2xl mx-auto">Immersive experiences built for the next generation of social platforms</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="meta-card overflow-hidden hover:shadow-lg transition-all duration-300" data-aos="fade-up">
+                        <img src="http://static.photos/industry/1024x576/135" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-white">
+                            <h3 class="text-xl font-semibold mb-2">Flexible packaging Solution</h3>
+                            <p class="text-gray-600 mb-4">Bring your flexible packaging operation to it's full potentials.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Inventory</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">ShortFloor Capacity</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Dispatch</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                        <img src="http://static.photos/office/640x360/102" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-white">
+                            <h3 class="text-xl font-semibold mb-2">SaaS Dashboard</h3>
+                            <p class="text-gray-600 mb-4">Data visualization and analytics dashboard with customizable widgets.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Mobile Data Entry</span>
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm">Multi Factor Authentication</span>
+                                <span class="px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                        <img src="http://static.photos/office/1024x576/118" alt="Project 3" class="w-full h-48 object-cover">
+                        <div class="p-6 bg-white">
+                            <h3 class="text-xl font-semibold mb-2">Pre-Sales Costing</h3>
+                            <p class="text-gray-600 mb-4">Costing during Quotation stage.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Estimator</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">BOM</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Sales Force</span>
+                                <span class="px-3 py-1 bg-yellow-100 text-pink-600 rounded-full text-sm">Microsoft Dynamics CRM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-var(--meta-dark) text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold gradient-text">Let's Connect</h3>
+                    <p class="text-gray-400 mt-2">Get in touch for collaborations or just to say hello!</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-500 transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="https://in.linkedin.com/in/shwet-shankar-7113a0246" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-500 transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition">
+                        <i data-feather="github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 My Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script>
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x1877F2,
+            backgroundColor: 0x1C1E21,
+            size: 0.8,
+            points: 10.00,
+            maxDistance: 20.00,
+            spacing: 15.00
+        });
+    </script>
+    <script>AOS.init();</script>
+    <script>feather.replace();</script>
+</body>
+</html>
